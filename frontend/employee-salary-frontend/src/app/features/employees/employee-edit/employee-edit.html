@@ -1,0 +1,84 @@
+<div class="employee-edit-page">
+
+  <h2>Edit Employee</h2>
+
+  <form (ngSubmit)="updateEmployee()">
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.employeeCode"
+      name="employeeCode"
+      placeholder="Employee Code"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.firstName"
+      name="firstName"
+      placeholder="First Name"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.lastName"
+      name="lastName"
+      placeholder="Last Name"
+      required
+    />
+
+    <input
+      type="email"
+      [(ngModel)]="employeeForm.email"
+      name="email"
+      placeholder="Email"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.country"
+      name="country"
+      placeholder="Country"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.department"
+      name="department"
+      placeholder="Department"
+      required
+    />
+
+    <input
+      type="text"
+      [(ngModel)]="employeeForm.jobTitle"
+      name="jobTitle"
+      placeholder="Job Title"
+      required
+    />
+
+    <select
+      [(ngModel)]="employeeForm.employmentStatus"
+      name="employmentStatus">
+
+      <option value="ACTIVE">ACTIVE</option>
+      <option value="INACTIVE">INACTIVE</option>
+
+    </select>
+
+    <button type="submit">
+      Update Employee
+    </button>
+
+    <button
+      type="button"
+      (click)="cancel()">
+      Cancel
+    </button>
+
+  </form>
+
+</div>

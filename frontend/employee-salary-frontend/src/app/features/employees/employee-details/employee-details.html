@@ -1,0 +1,48 @@
+<div class="employee-details">
+
+  <h2>Employee Details</h2>
+
+  @if (employee) {
+
+    <div>
+      <strong>Employee Code:</strong>
+      {{ employee.employeeCode }}
+    </div>
+
+    <div>
+      <strong>Name:</strong>
+      {{ employee.firstName }} {{ employee.lastName }}
+    </div>
+
+    <div>
+      <strong>Email:</strong>
+      {{ employee.email }}
+    </div>
+
+    <div>
+      <strong>Country:</strong>
+      {{ employee.country }}
+    </div>
+
+    <div>
+      <strong>Department:</strong>
+      {{ employee.department }}
+    </div>
+
+    <div>
+      <strong>Job Title:</strong>
+      {{ employee.jobTitle }}
+    </div>
+
+    <div>
+      <strong>Status:</strong>
+      {{ employee.employmentStatus }}
+    </div>
+
+  } @else {
+
+    <p>Loading employee...</p>
+
+  }
+
+</div>
